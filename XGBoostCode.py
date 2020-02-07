@@ -43,7 +43,7 @@ test_size = 0.2
 # Initialise a timer
 start_time = time.time()
 
-X_train, X_test, y_train, y_test = train_test_split(array, Y, test_size=test_size, random_state=seed)
+X_train, X_test, y_train, y_test = train_test_split(new_X, Y, test_size=test_size, random_state=seed)
 
 # Create the model
 model = XGBRegressor(objective ='reg:squarederror')
